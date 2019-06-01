@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Rotate {
   public static void main(String[] args) {
-    int[] arr = {4, 5, 1, 2, 3};
-    rotate(arr, 2);
+    int[] arr = {2, 62, 31, 79, 6, 21, 37, 45, 27, 23, 66};
+    rotate(arr, 6);
   }
 
   private static void rotate(int[] arr, int k) {

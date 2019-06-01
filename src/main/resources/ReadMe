@@ -1,0 +1,5 @@
+git remote add origin https://github.com/sarun85/test.git
+
+git push --set-upstream master master
+
+git push master
