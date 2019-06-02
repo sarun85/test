@@ -10,13 +10,8 @@ public class SampleFunctional {
     System.out.println(totalValues(numbers, num -> num % 2 == 0));
   }
 
+  // Mixing object composition + Function composition
   public static int totalValues(List<Integer> numbers, Predicate<Integer> selector) {
-    int result = 0;
-    for (int e : numbers) {
-      if (selector.test(e)) {
-        result += e;
-      }
-    }
-    return result;
+    return numbers.stream().filter(selector).reduce(0, Math::addExact);
   }
 }
